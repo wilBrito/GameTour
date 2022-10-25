@@ -1,0 +1,176 @@
+
+
+.containerNav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color: #2B2b2b;
+    z-index: 100;
+}
+
+.item-nav-left{
+    flex: 30%;
+    text-align: center;
+}
+
+.logo-nav{
+  margin: 1.5rem 0 0 0;
+}
+
+.item-nav-right{
+    flex: 70%;
+
+}
+
+
+
+
+
+.topnav {
+    overflow: hidden;
+    /* width: 100%; */
+    margin: .9rem 0 0 24rem;
+    /* Hacer mediquery a este elemento */
+  }
+
+  @media (max-width: 1450px){
+    .topnav{
+      margin: .9rem 0 0 19rem;
+    }
+  }
+
+  @media (max-width: 1350px){
+    .topnav{
+      margin: .9rem 0 0 13rem;
+    }
+  }
+  
+  @media (max-width: 1250px){
+    .topnav{
+      margin: .9rem 0 0 7rem;
+    }
+  }
+
+  @media (max-width: 1150px){
+    .topnav{
+      margin: .9rem 0 0 4rem;
+    }
+  }
+
+  @media (max-width: 1100px){
+    .topnav{
+      margin: .9rem 0 0 0;
+    }
+  }
+
+ 
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+
+  .icon {
+    display: none;
+  }
+  
+
+  .dropdownM {
+    float: left;
+    overflow: hidden;
+  }
+  
+
+  .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  
+  }
+  
+  
+  .dropdownM-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ 
+  .dropdownM-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+
+  .topnav a:hover, .dropdownM:hover .dropbtn {
+    color: rgb(189, 168, 168);
+  }
+  
+
+  .dropdownM-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+  .dropdownM:hover .dropdownM-content {
+    display: block;
+  }
+  
+ 
+  @media screen and (max-width: 1030px) {
+    .topnav a, .dropdownM .dropbtn {
+      display: none;
+    }
+    .icon {
+      float: right;
+      display: block;
+      margin: .5rem 1rem 0 0;
+      color: white;
+
+    }
+  }
+  
+ 
+  @media screen and (max-width: 1030px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdownM {float: none;}
+    .topnav.responsive .dropdownM-content {position: relative;}
+    .topnav.responsive .dropdownM .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+ 

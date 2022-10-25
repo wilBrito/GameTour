@@ -1,0 +1,103 @@
+
+
+.ajusteIconoTorneo{
+    padding: 5rem 0 0 0;
+    margin: 0 0 0 10rem;
+}
+
+.ajusteIconoTorneo i{
+    cursor: pointer;
+}
+
+.containerInfoDeTorneo{
+    height: 700px;
+    margin: 0 5rem 6rem 5rem;
+    display: grid;
+    grid-template-columns:600px 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemInfoTorneo-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemInfoTorneo-left div{
+    width: 550px;
+    height: 550px;
+}
+
+.itemInfoTorneo-left div img{
+    max-width: 100%;
+    height: 550px;
+    object-fit: fill;
+}
+
+.itemInfoTorneo-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.itemInfoTorneo-right-elementos{
+    width: 550px;
+    height: 450px;
+}
+
+.itemInfoTorneo-right-elementos h1,
+.itemInfoTorneo-right-elementos h5{
+    text-align: center;
+}
+
+.itemInfoTorneo-right-elementos p{
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.itemInfoTorneo-right-div{
+    margin: 0 0 2rem 0;
+}
+
+.itemInfoTorneo-right-elementos div span{
+    margin: 0 0 0 1.5rem;
+    font-size: 25px;
+}
+
+.btnParticipar{
+    text-align: center;
+}
+
+.btnParticipar button{
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    border-radius: 10px;
+    border: 0;
+}
+
+
+/* Disponibilidad de Actividad */
+.disponible{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 .8rem;
+    border-radius: 50%;
+    background-color: greenyellow;
+}
+
+.nodisponible{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 .8rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.avisoInfoTor{
+    color: white;
+    margin-left: 1rem;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.IntUsuarioService"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.repository.UsuarioRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.UsuarioServiceImplMysql8"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.EnableWebSecurity"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.builders.HttpSecurity"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.IntTipoUsuarioService"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.repository.TipoUsuarioRepository"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.TipoUsuarioServiceImplMysql8"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.beans.TipoPriv"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.IntTipoPrivService"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.repository.TipoPrivRepository"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.TipoPrivServiceImplMysql8"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.repository.TorneoRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.beans.TipoJuego"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.repository.TipoJuegoRepository"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.IntTipoJuegoService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.beans.Usuario"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.service.IntTorneoService"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.beans.Torneo"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.tfc.torneo.restJpa.modelo.beans.TipoUsuario"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+</qualifiedTypeNameHistroy>

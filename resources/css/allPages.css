@@ -1,0 +1,328 @@
+
+html,body{
+    background-color: #131313;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenido Publicidad o  Marcas Colaboradoras */
+.containerMarcasPubli{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 150px;
+    padding: 2.5rem 0 0 0;
+    background-color: #1a1a1a;
+}
+
+.item-marcasPubli{
+    text-align: center;
+}
+
+.item-marcasPubli img{
+    width: 200px;
+    height: 70px;
+}
+
+
+/* Contenido Información Relacionada */
+.containerInfo{
+    display: grid;
+    grid-template-columns: 19% 27% 27% 27% ;
+    height: 350px;
+    background-color: #202020;
+}
+
+.item-info{
+    color: white;
+    text-align: center;
+    margin: 5rem 2rem 0 2rem;
+}
+
+
+/* Footer */
+.containerFooter{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 100px;
+    background-color: #272727;
+}
+
+.item-footer{
+    text-align: center;
+    margin: 2.1rem 0 0 0;
+}
+
+.item-footer span{
+    color: white;
+}
+
+.item-footer-right{
+    text-decoration: none;
+    color: white;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.item-footer-right:hover{
+    color:gray
+}
+
+/* Esta presente en index y en footer */
+.icono-prefil-social{
+    border-radius: 50%;
+}
+
+.icono-prefil-social i{
+    color: gray;
+}
+
+.icono-prefil-social i:hover{
+    color: black;
+}
+
+
+
+/* Botón iniciar sesió y registro */
+.btn-formulario-1{
+    padding: .5rem 2rem .5rem 2rem;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+
+/* Section All Torneos */
+.containerAllTorneos,
+.containerTorneosDestacados{
+    margin: 3rem 15rem 10rem 15rem;
+}
+
+
+
+.containerAllTorneos h3{
+    color: white;
+    margin: 0 0 3rem 0;
+}
+
+
+/* Temporal Torneos */
+.containerIntemsTorneosDestacados{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-items: center;
+    row-gap: 50px;
+}
+
+.item-torneoDestacado{
+    height: 570px;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.item-torneoDestacado:hover{
+    /* box-shadow: white 0px 5px 15px; */
+    box-shadow: white 0px 3px 8px;
+}
+
+.item-torneoDestacado-img{
+    width: 380px;
+    height: 300px;
+    margin: .6rem 0 1rem .6rem;
+}
+
+.item-img-size{
+    height: 300px;
+    width: 380px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.item-torneoDestacado-precioBtn{
+    display: flex;
+    flex-direction: row;
+}
+.item-torneoDestacado-precio{
+    flex: 50%;
+    margin: .5rem 0 0 0;
+}
+
+.item-torneoDestacado-btn{
+    flex: 50%; 
+    margin: 0 2rem 0 2rem;
+    padding: .5rem 0 .5rem 0;
+    border: 1px black solid;
+    background-color: #131313;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width:1750px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 14rem 15rem 14rem;
+    }    
+}
+
+@media (max-width:1700px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 12rem 15rem 12rem;
+    }    
+}
+
+@media (max-width:1650px) {
+    .containerAllTorneos
+    .containerTorneosDestacados{
+        margin: 3rem 10rem 15rem 10rem;
+    }    
+}
+
+@media (max-width:1600px) {
+    .containerAllTorneos
+    ,.containerTorneosDestacados{
+        margin: 3rem 8rem 15rem 8rem;
+    }
+ 
+}
+
+@media (max-width:1550px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 6rem 15rem 6rem;
+    }  
+}
+
+@media (max-width:1500px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 4rem 15rem 4rem;
+    }  
+}
+
+@media (max-width:1450px) {
+    .containerIntemsTorneosDestacados{
+        grid-template-columns: 50% 50% ;
+    }
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 15rem 15rem 15rem;
+    } 
+}
+
+@media (max-width:1350px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 14rem 15rem 14rem;
+    } 
+}
+
+@media (max-width:1300px) {
+    .containerAllTorneos{
+        margin: 3rem 12rem 15rem 12rem;
+    } 
+}
+
+@media (max-width:1250px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 10rem 15rem 10rem;
+    } 
+}
+
+@media (max-width:1200px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 8rem 15rem 8rem;
+    } 
+}
+
+@media (max-width:1150px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 6rem 15rem 6rem;
+    } 
+}
+
+@media (max-width:1100px) {
+    .containerAllTorneos
+    ,.containerTorneosDestacados{
+        margin: 3rem 4rem 15rem 4rem;
+    } 
+}
+
+@media (max-width:1000px) {
+    .containerIntemsTorneosDestacados{
+        grid-template-columns: 100%  ;
+    }
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 15rem 15rem 15rem;
+    } 
+}
+
+@media (max-width:900px) {
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        margin: 3rem 12rem 15rem 12rem;
+    } 
+}
+
+@media (max-width:600px){
+    .containerAllTorneos,
+    .containerTorneosDestacados{
+        text-align: center;
+        margin: 3rem 0 15rem 0;
+    }
+}
+
+
+@media (max-width:410px){
+    .item-torneoDestacado{
+        height: 500px;
+        width: 330px;
+    }
+    
+    .item-torneoDestacado-img{
+        width: 310px;
+        height: 270px;
+    }
+    
+    .item-img-size{
+        height: 230px;
+        width: 310px;
+    }
+    
+}
+
+/* Logo Principa*/
+#imgLogo{
+    position: relative;
+    bottom: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+  /* Contenido de las subscripciones */
+
+.containerPerfilIni-item-right-21{
+    width: 500px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgb(220, 219, 219);
+
+    position: relative;
+    bottom: 43rem;
+    
+}
+
+.it4{
+    padding: .4rem 0 .4rem 0;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+

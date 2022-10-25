@@ -1,0 +1,24 @@
+
+
+.containerRegistro{
+    text-align: center;
+    margin: 12rem 0 34rem 0;
+
+}
+
+.containerRegistro h1{
+    color: white;
+}
+.containerRegistro p{
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.containerFormRegistro{
+    text-align: left;
+    width: 615px;
+    margin: 0 auto;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #2B2b2b;
+    border-radius: 10px;
+}

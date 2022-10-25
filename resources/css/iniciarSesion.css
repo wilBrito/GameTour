@@ -1,0 +1,27 @@
+
+
+.containerIniciarSesion{
+    text-align: center;
+    margin: 12rem 0 34rem 0;
+
+}
+
+.containerIniciarSesion h1,
+.containerIniciarSesion p{
+    color: white;
+}
+
+.containerIniciarSesion p{
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.containerFormIniSe{
+    text-align: left;
+    width: 545px;
+    margin: 0 auto;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #2B2b2b;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Boostrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Boostrap Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/allPages.css">
+    <link rel="stylesheet" href="../css/headerNavTop.css">
+    <link rel="stylesheet" href="../css/headerNav1.css">
+    <link rel="stylesheet" href="../css/crearTorneo.css">
+
+
+
+
+    <title>Crear Torneo</title>
+</head>
+<body onload="logueadoTrueFalse(); subsPagoTor()">
+    <header>    
+        <!-- Arriba del navegador -->
+        <section class="containerNavTop">
+            <div class="item-navTop-left">
+                <div class="info-navTop-email">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:wil.brito@icloud.com">wil.brito@icloud.com</a>
+                </div>
+                <div class="info-navTop-phone">
+                    <i class="bi bi-telephone-fill"></i>
+                    <a href="tel:+34678167750">+34 678167750</a>
+                </div>
+            </div>
+            <div class="item-navTop-right">
+                <div class="iconos-navTop-redes">
+                    <a href="#"><span><i class="bi bi-twitter"></i></span></a>
+                    <a href="#"><span><i class="bi bi-instagram"></i></span></a>
+                    <a href="#"><span><i class="bi bi-youtube"></i></span></a>
+                    <a href="#"><span><i class="bi bi-twitch"></i></span></a>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Navegador -->
+        <section class="containerNav">
+            <div class="item-nav-left">
+                <div class="logo-nav">
+                    <img id="imgLogo" src="../assets/img/logo.svg" alt="logp-tournemet" width="400px" height="80px" onclick="irIndex()">
+                </div>
+            </div>
+            <div class="item-nav-right">
+
+                <div class="topnav" id="myTopnav">
+
+                    <a  href="../index.html">Inicio</a>
+
+                    <div class="dropdownM login-f">
+                        <button class="dropbtn">Acceder
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdownM-content">
+                          <a href="../html/iniciarSesion.html">Iniciar Sesión</a>
+                          <a href="../html/registro.html">Registrar</a>
+                        </div>
+                    </div>
+
+                    <a href="torneos.html">Torneos</a>
+                    <a href="#" onclick="irCrearTorneo()">Crear Torneo</a>
+        
+                    <div class="dropdownM">
+                      <button class="dropbtn">Monetiza
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdownM-content">
+                        <a href="../index.html#subT">Suscribete</a>
+                      </div>
+                    </div>
+
+                    <div class="dropdownM">
+                        <button class="dropbtn login-t" style="display: none;">Perfil
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdownM-content">
+                          <a href="../html/perfil.html">Mi Perfil</a>
+                          <a href="../html/editar.html">Editar</a>
+                        </div>
+                    </div>
+
+                    <a href="../index.html" class="login-t" onclick="cerrarSesion()" style="display: none;">Cerrar Sesión</a>
+    
+                </div>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </section>
+    </header>
+    
+    <section class="ajuste"></section>
+
+    <section class="containerCrearTorneo">
+        <div class="itemCrearTorneo-left">
+            <h1>CREA TU TORNEO</h1>
+            <p>Para crear tu propio torneo debes de rellenar todos los campos, incluido la foto de este, para cambiarla deberas de seleccionar primero el tipo de juego y posteriormente pinchar encimal, para ver las imagenes disponibles.</p>
+            <div onclick="seleccionarImgTorneo()">
+                <i class="bi bi-image imagenFoto fa-3x" ></i>
+                <img class="imgCrearTorneoPrin" src="" alt="" style="display: none;">
+            </div>
+        </div>
+
+        <div class="itemCrearTorneo-right">
+            <div class="itemCrearTorneo-right-1">
+                <form  method="post" action="http://localhost:4000/rest/torneo/crearTorneo">
+                    <div class="itemCrearTorneo-right-first">
+                        <div>
+                            <label class="form-label">Tipo de Juego*</label><br>
+                            <select id="tipoJuego" class="selectTipoJuego selectPa" onchange="cambioJuego(event)" required>
+                                <option>Selecciona un tipo de juego</option>
+                                <option>League of Legends</option>
+                                <option>Pokemón</option>
+                                <option>Fifa 22</option>
+                                <option>Clash Royale</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">Modalidad*</label><br>
+                            <select id="modalidad" class="selectPa" required>
+                                <option>Modalidad</option>
+                                <option>1vs1</option>
+                                <option>2vs2</option>
+                                <option>5vs5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="itemCrearTorneo-right-second">
+                        <label class="form-label">Nombre del Torneo*</label><br>
+                        <input id="nombreCt" class="form-control" type="text" required>
+                    </div>
+
+                    <div class="itemCrearTorneo-right-second">
+                        <label class="form-label">Descripción*</label><br>
+                        <textarea id="descripcionCt" class="form-control" rows="5" cols="40" required placeholder="Mín. 171 - Max. 220 carácteres" onkeyup="descriSize()"></textarea>
+                    </div>
+
+                    <div class="itemCrearTorneo-right-second">
+                        <label class="form-label">Plazas*</label><br>
+                        <input id="plazas" class="form-control" type="number" placeholder="Nº Par 2,4,6..." required> 
+                    </div>
+
+                    <div class="itemCrearTorneo-right-first-2">
+                        <div>
+                            <label class="form-label">Fecha Inicio*</label><br>
+                            <input id="fechIniCt" class="form-control" type="date" required>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Hora*</label><br>
+                            <input id="timeCt" class="form-control hMa" type="time" value="17:00:00" required>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Fecha Fin</label><br>
+                            <input id="fechFinCt" class="form-control" type="date">
+                        </div>
+                    </div>
+
+                    <div class="itemCrearTorneo-right-second">
+
+                        <div>
+                            <label class="form-label">Precio*</label><br>
+                            <input id="precio" class="form-control" type="number" disabled>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="btnCrearTorneo" onclick="crearTorneo()">Crear</button>
+        </div>
+        <h3 class="text-light" id="errorCtMensaje"></h3>
+    </section>
+    <div class="selectorDeImgFlotante" style="display: none;">
+        <div>
+            <img class="listaImgCrearTorneo" src="" onclick="imgCrearTorneo(event)">
+        </div>
+
+        <div>
+            <img class="listaImgCrearTorneo" src="" onclick="imgCrearTorneo(event)"> 
+        </div>
+
+        <div>
+            <img class="listaImgCrearTorneo" src="" onclick="imgCrearTorneo(event)"> 
+        </div>
+
+
+
+        <div>
+            <img class="listaImgCrearTorneo" src="" onclick="imgCrearTorneo(event)">
+        </div>
+
+        <div>
+            <img class="listaImgCrearTorneo" src="" onclick="imgCrearTorneo(event)">   
+        </div>
+
+        <div>   
+            <img class="listaImgCrearTorneo" src="" onclick="imgCrearTorneo(event)">     
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+         <!-- Section Publicidad o Marcas colaboradoras -->
+         <section class="containerMarcasPubli">
+            <div class="item-marcasPubli">
+                <img src="../assets/img/logo-ifp.png" alt="">
+            </div>
+    
+            <div class="item-marcasPubli">
+                <img src="../assets/img/logo-ifp.png" alt="">
+            </div>
+            <div class="item-marcasPubli">
+                <img src="../assets/img/logo-ifp.png" alt="">
+            </div>
+    
+            <div class="item-marcasPubli">
+                <img src="../assets/img/logo-ifp.png" alt="">
+            </div>
+        </section>
+    
+    <!-- Section Informació Relacionada-->
+    <section class="containerInfo">
+        <div class="item-info">
+            <img src="../assets/img/logo.svg" width="300px">
+        </div>
+
+        <div class="item-info">
+            <h5>Información de contacto</h5>
+            <p>¿Quiénes somos?</p>
+            <p>Trabaja con nosotros</p>
+        </div>
+
+        <div class="item-info">
+            <h5>Servicios</h5>
+            <p>Mejor precio garantizado</p>
+            <p>Solicitar factura</p>
+            <p>Encuentra tu torneo</p>
+            <p>Seguridad monetaria</p>
+            <p>Sostenibilidad</p>
+        </div>
+
+        <div class="item-info">
+            <h5>Métodos de pago</h5>
+            <p>VISA</p>
+            <p>MasterCard</p>
+            <p>PayPal</p>
+            <p>Bizum</p>
+            <p>Bitcoin</p>
+        </div>
+    </section>
+    
+        <!-- Footer -->
+        <footer class="containerFooter">
+            <div class="item-footer">
+                <span>Copyright &copy; Your Website 2021</span>
+            </div>
+    
+            <div class="item-footer">
+                <a class="btn btn-light btn-social mx-2 icono-prefil-social" href="#!"><i class="bi bi-twitter"></i></a>
+                <a class="btn btn-light btn-social mx-2 icono-prefil-social" href="#!"><i class="bi bi-facebook"></i></a>
+                <a class="btn btn-light btn-social mx-2 icono-prefil-social" href="#!"><i class="bi bi-linkedin"></i></a>
+            </div>
+    
+            <div class="item-footer">
+                <a class="item-footer-right" href="#!">Privacy Policy</a>
+                <a class="item-footer-right" href="#!">Terms of Use</a>
+            </div>
+        </footer>
+    
+    
+    
+    
+    
+        <!-- JavaScript Boostrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+        <!-- JavaScript -->
+        <script src="../js/allPages.js"></script>
+        <script src="../js/headerNav1.js"></script>
+        <script src="../js/crearTorneo.js"></script>
+        <script src="../js/script-ajax.js"></script>
+</body>
+</html>

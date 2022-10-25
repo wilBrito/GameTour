@@ -1,0 +1,27 @@
+
+
+.containerNav2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 80px;
+    background-color: #2B2b2b;
+}
+
+.item-nav2-img,
+.item-nav2-txt{
+    color: white;
+    margin: 1.5rem 0 0 0;
+}
+
+.item-nav2-img{
+    margin-left: 15rem;
+}
+
+.item-nav2-img img{
+    cursor: pointer;
+}
+
+.item-nav2-txt{
+    text-align: end;
+    margin-right: 5rem;
+}

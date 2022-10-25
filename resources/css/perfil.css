@@ -1,0 +1,106 @@
+.containerPerfilIni{
+    padding: 5rem 0 6rem 0;
+    
+}
+
+.containerPerfilIni-item{
+    width: 930px;
+    height: 420px;
+
+    display: grid;
+    grid-template-columns: 440px 400px;
+
+    border-radius: 10px;
+
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* .containerPerfilIni-item-right{
+    
+} */
+
+.containerPerfilIni-item-left-1{
+    width: 125px;
+    height: 150px;
+
+    border-radius: 5px;
+
+    margin: 2rem 0 0 6rem;
+    /* background-color: aliceblue; */
+}
+
+.containerPerfilIni-item-left-1 img{
+    border-radius: 5px;
+}
+
+.containerPerfilIni-item-left-2{
+    margin: .5rem 0 0 6rem;
+}
+
+.containerPerfilIni-item-left-2 span{
+    margin: 0 2rem 0 0;
+    font-size: 19px;
+}
+
+.containerPerfilIni-item-right-1{
+    margin: 2rem 0 0 0;
+}
+
+/* Tarjeta */
+.containerPerfilIni-item-right-1 h4{
+    text-align: center;
+}
+
+.dercBtnBo{
+    text-align: right;
+    margin: 0 0 .5rem 0;
+}
+
+.tarjeForm form{
+    margin: 0 0 0 15%;
+}
+
+
+.caduTar{
+ width: 130px;
+ margin: 0 .7rem 0 0;
+}
+
+.cvvTar{
+    width: 70px;
+}
+
+.btnsTar{
+    text-align: center;
+    margin: 2rem;
+}
+
+.btnsTar button{
+    width: 100px;
+    height: 35px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #e9e9ed;
+}
+
+.btnsTar button:hover{
+    background-color: #c5c5c5;
+}
+
+.containerPerfilAccordeon{
+    margin: 2rem 10rem 5rem 10rem;
+}
+
+.accordion-body{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+}
+
+.it2{
+    padding: .4rem 0 .4rem 0;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
